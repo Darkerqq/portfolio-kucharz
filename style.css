@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap');
+
+body {
+    background: #EEAECA;
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+.główny {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: white;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    color: #4bbadb;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.pasek_górny {
+    align-self: flex-start;
+    width: 100%;
+    background-color: hsla(180, 87%, 44%, 0.6);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.lewy_pasek {
+    display: flex;
+    flex-direction: row;
+}
+
+.lewy_pasek h3, .prawy_pasek {
+    margin: 0;
+    color: white;
+}
+
+.poniżej {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.lewy {
+    width: 50%;
+    padding: 10px;
+}
+
+.obrazek-lewy {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.prawy {
+    width: 50%;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.To_ja {
+    font-size: 70px;
+    color: #4bbadb;
+    margin-left: 330px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.dół {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.obrazek-dol {
+    width: 80%;
+    max-width: 1200px;
+    height: auto;
+    border-radius: 15px;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(3, 16, 32)
+}
+
+/* Nowa konfiguracja dla lewego i prawego paska */
+.pasek_górny .lewy_pasek a {
+    padding: 0 20px; /* Dodajemy przestrzeń między linkami */
+}
+
+.prawy_pasek {
+    flex-grow: 1; /* Przestrzeń na prawą stronę */
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.pasek {
+    text-align: center;
+}
