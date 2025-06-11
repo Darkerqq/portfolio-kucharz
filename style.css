@@ -1,18 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap');
 
 body {
-    background: #EEAECA;
-    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
-}
-
-.główny {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background: radial-gradient(circle, #EEAECA 0%, #94bbe9 100%);
 }
 
 header {
-    background-color: white;
+    background: #fff;
     text-align: center;
     font-family: 'Dancing Script', cursive;
     color: #4bbadb;
@@ -22,53 +15,77 @@ header {
     border-radius: 20px;
 }
 
-.pasek_górny {
-    align-self: flex-start;
+.pasek-nawigacyjny {
     width: 100%;
-    background-color: hsla(180, 87%, 44%, 0.6);
+    background: #4bbadb;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    align-items: center;
+    padding: 0 40px;
+    height: 50px;
+    box-sizing: border-box;
 }
 
-.lewy_pasek {
+.nav-lewo {
     display: flex;
-    flex-direction: row;
+    align-items: center;
 }
 
-.lewy_pasek h3, .prawy_pasek {
-    margin: 0;
-    color: white;
+.nav-prawo {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* odstęp między linkami po prawej */
 }
 
-.poniżej {
+.pasek-nawigacyjny a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-family: 'Dancing Script', cursive;
+    transition: color 0.2s;
+}
+
+.pasek-nawigacyjny a:hover {
+    color: #031020;
+}
+
+.sekcja-glowna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sekcja-tresc {
     display: flex;
     justify-content: space-between;
     width: 100%;
     margin-top: 20px;
 }
 
-.lewy {
+.kolumna-lewa, .kolumna-prawa {
     width: 50%;
     padding: 10px;
 }
 
-.obrazek-lewy {
+.kolumna-prawa {
+    font-size: 20px;
+}
+
+.zdjecie-profilowe, .zdjecie-stopka {
     width: 100%;
     height: auto;
     border-radius: 15px;
 }
 
-.prawy {
-    width: 50%;
-    padding: 10px;
-    font-size: 20px;
+.zdjecie-stopka {
+    width: 80%;
+    max-width: 1200px;
 }
 
-.To_ja {
+.tytul-opisu {
     font-size: 70px;
     color: #4bbadb;
-    margin-left: 330px;
+    margin-left: center;
 }
 
 ul {
@@ -80,41 +97,111 @@ ul li {
     margin-bottom: 10px;
 }
 
-.dół {
+.sekcja-stopka {
     width: 100%;
     text-align: center;
     margin-top: 20px;
 }
 
-.obrazek-dol {
-    width: 80%;
-    max-width: 1200px;
-    height: auto;
-    border-radius: 15px;
-}
-
 a {
-    color: rgb(255, 255, 255);
+    color: #fff;
     text-decoration: none;
 }
 
 a:hover {
-    color: rgb(3, 16, 32)
+    color: #031020;
 }
 
-/* Nowa konfiguracja dla lewego i prawego paska */
-.pasek_górny .lewy_pasek a {
-    padding: 0 20px; /* Dodajemy przestrzeń między linkami */
-}
-
-.prawy_pasek {
-    flex-grow: 1; /* Przestrzeń na prawą stronę */
-    text-align: right;
+.formularz-kontakt {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    gap: 10px;
     align-items: center;
+    margin-top: 15px;
 }
 
-.pasek {
+.formularz-kontakt input,
+.formularz-kontakt textarea {
+    width: 100%;
+    max-width: 450px;
+    padding: 8px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: inherit;
+    resize: vertical;
+}
+
+.formularz-kontakt textarea {
+    min-height: 70px;
+}
+
+.formularz-kontakt button {
+    background: #4bbadb;
+    color: #fff;
+    padding: 8px 24px;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.formularz-kontakt button:hover {
+    background: #379bb0;
+}
+
+
+.kontakt-tresc {
+    justify-content: center;
+}
+
+.kontakt-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.kontakt-blok {
+    width: 100%;
+    max-width: 500px;
     text-align: center;
+    margin: 0 auto;
+}
+
+.kontakt-tytul {
+    font-size: 40px;
+    margin-left: 0;
+}
+
+.kontakt-lista {
+    font-size: 1.2em;
+}
+
+.dania-tresc {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.danie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    margin: 20px;
+    padding: 20px;
+    max-width: 370px;
+    width: 100%;
+}
+
+.danie-zdjecie {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
 }
